@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To Do List</title>
+    <link rel = "stylesheet" href = "style.css">
+</head>
+<body>
+    <div class = "parent">
+       <div class = "title"><img src = "Screenshot 2026-06-10 102336.png" >
+         <h1> My To Do List</h1></div>
+            <p class = "sub">organize your task and get things done!</p>
+            </div>
+            <div class="input">
+    <input type="text" id="taskInput" placeholder="Enter a task...">
+    <input type="date" id="dateInput">
+    <button id="addBtn">Add Task</button>
+</div>
+            <div class="subinput"> 
+    <button class="l filter" data-filter="all">All</button>
+    <button class="l filter" data-filter="pending">Pending</button>
+    <button class="l filter" data-filter="complete">Complete</button>
+</div>
+            <hr>
+            <ul id="taskList">
+
+<li>
+    <div class="left">
+        <input type="checkbox">
+        <div class="task-info">
+            <h4>Study JavaScript</h4>
+            <p>20-05-2024</p>
+        </div>
+    </div>
+
+    <div class="right">
+        <span class="status">Pending</span>
+        <button>✏️</button>
+        <button>🗑️</button>
+    </div>
+</li>
+
+<li>
+    <div class="left">
+        <input type="checkbox">
+        <div class="task-info">
+            <h4>Build To-Do List Project</h4>
+            <p>22-05-2024</p>
+        </div>
+    </div>
+
+    <div class="right">
+        <span class="status">Pending</span>
+        <button>✏️</button>
+        <button>🗑️</button>
+    </div>
+</li>
+
+</ul>
+
+    <hr>
+    <p class="footer">
+    Total: <span id="total">0</span> |
+    Completed: <span id="completed">0</span> |
+    Pending: <span id="pending">0</span>
+</p>
+ </div>
+    <script src="first.js"></script>
+</body>
+</html>
